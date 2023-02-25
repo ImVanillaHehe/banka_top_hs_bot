@@ -2,12 +2,11 @@ from database import Base
 from sqlalchemy import Column, String, Integer
 
 
-class Lead(Base):
-    __tablename__ = "leaderboard"
-
+class Player(Base):
+    __tablename__ = 'players'
     id = Column(Integer, primary_key=True)
-    player_name = Column("player name", String)
-    rating = Column("rating", Integer)
-    rank = Column("rank", Integer)
+    account_name = Column(String)
+    rating = Column(Integer)
+    rank = Column(Integer)
 
 

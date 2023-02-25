@@ -3,7 +3,7 @@ import asyncio
 import json
 
 data_player = []
-tier = set(["VanillaHehe", "GIGI", "thezevz", "mM1307", "RANDOM"])
+tier = set(["VanillaHehe", "GIGI", "thezevz", "mM1307", "RANDOM", "HATEmm1307"])
 headers = {
         "user-agent": "Mozilla/5.0 (Windows NT 10.0;Win64;x64) AppleWebKit/537.36(KHTML, likeGecko)"
                       " Chrome/105.0.0.0 Safari/537.36",
