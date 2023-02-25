@@ -30,10 +30,11 @@ async def process_callback_ranks(callback_query: types.CallbackQuery):
     await bot.answer_callback_query(callback_query.id)
     await callback_query.message.answer("Запрос обрабатывается. Примерное время ожидания 2-3 минуты. Не нажимай на кнопку "
                                         "пока не выведет список игроков. Просто подожди 2-3 минуты, сука ")
+    time.sleep(2)
     await callback_query.message.answer("Если кого нет в списке, просто нажми заново на кнопку")
 
     try:
-        await asyncio.wait_for(mainstream(1, 3000), timeout=600000.0)
+        await asyncio.wait_for(mainstream(1, 4000) )
     except KeyError:
         await callback_query.message.answer("Что-то пошло не так. Попробуй еще раз")
         await callback_query.message.answer("Бот умер")
