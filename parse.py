@@ -12,7 +12,7 @@ headers = {
 
 async def fetch_data(session, page):
     url = f"https://hearthstone.blizzard.com/ru-ru/api/community/leaderboardsData?region=EU&leaderboardId=battlegrou" \
-          f"nds&page={page}&seasonId=8"
+          f"nds&page={page}&seasonId=9"
     async with session.get(url=url, headers=headers, ssl=False) as response:
         data = await response.json()
         items = data["leaderboard"]["rows"]
